@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -90,6 +94,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 19.9px;
+  margin-bottom: 50px;
 }
 
 .contact-icon {
@@ -103,7 +108,6 @@ a {
 
 .arrow-btn {
   padding: 8px;
-  position: absolute;
   width: 40px;
   height: 40px;
   left: calc(50% - 40px / 2 + 0.5px);
@@ -115,4 +119,108 @@ a {
 
 .arrow-btn img {
   width: 19.9px;
+}
+
+/* Work & About */
+
+.works-header {
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.underline {
+  text-align: center;
+  padding: 10px 60px;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -0.8rem;
+  left: 50%;
+  background: #172b4d;
+  width: 50px;
+  height: 0.1rem;
+  transform: translate(-50%);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.card-head img {
+  width: 100%;
+  height: 252px;
+}
+
+.grid-container {
+  width: 90%;
+  margin: 30px auto;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.work-tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  padding: 8px 12px;
+}
+
+.work-tool {
+  margin-right: 1rem;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  font-style: normal;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 8px;
+  color: #3a4a42;
+}
+
+.md-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  font-style: normal;
+  color: #3a4a42;
+  margin: 16px 0;
+}
+
+.see-project-btn {
+  background-color: #36b37f;
+  border-radius: 4px;
+  text-align: center;
+  width: 122px;
+  height: 48px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 3%;
+  font-style: normal;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.see-project-btn:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-project-btn:focus {
+  background-color: #008552;
 }
