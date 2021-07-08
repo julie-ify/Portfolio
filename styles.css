@@ -22,11 +22,12 @@ a {
   padding: 20px;
 }
 
-.brand {
+.logo {
   font-weight: 600;
   font-size: 20px;
   font-style: normal;
   margin: 0;
+  color: #28352f;
 }
 
 .hamburger {
