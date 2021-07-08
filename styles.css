@@ -5,6 +5,14 @@ body {
   line-height: 28px;
 }
 
+main {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -21,8 +29,18 @@ body {
   margin: 0;
 }
 
-main {
-  position: relative;
+.hamburger {
+  position: absolute;
+  z-index: 3;
+  right: 35px;
+  cursor: pointer;
+}
+
+.btn-line {
+  width: 28px;
+  height: 3px;
+  margin-bottom: 5px;
+  background-color: #000;
 }
 
 .headline {
@@ -65,14 +83,21 @@ main {
 }
 
 .contact-icons {
+  position: static;
   list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 19.9px;
 }
 
 .contact-icon {
   margin-right: 20px;
+}
+
+.contact-icon img {
+  width: 19.99px;
+  color: #505f79;
 }
 
 .arrow-btn {
@@ -85,4 +110,8 @@ main {
   background-color: #fff;
   border-radius: 32px;
   border: 1px solid #dfe1e6;
+}
+
+.arrow-btn img {
+  width: 19.9px;
 }
