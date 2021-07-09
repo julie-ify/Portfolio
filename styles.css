@@ -13,6 +13,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .header-content {
   display: flex;
   align-items: center;
@@ -45,7 +51,7 @@ a {
 }
 
 .headline {
-  height: 520px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,6 +71,7 @@ a {
   line-height: 52px;
   font-style: normal;
   color: #172b4d;
+  text-align: center;
 }
 
 .primary-color {
@@ -90,6 +97,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 19.9px;
+  margin-bottom: 50px;
 }
 
 .contact-icon {
@@ -103,7 +111,6 @@ a {
 
 .arrow-btn {
   padding: 8px;
-  position: absolute;
   width: 40px;
   height: 40px;
   left: calc(50% - 40px / 2 + 0.5px);
@@ -115,4 +122,204 @@ a {
 
 .arrow-btn img {
   width: 19.9px;
+}
+
+/* Work & About */
+
+.works-header {
+  margin-bottom: 62px;
+  position: relative;
+}
+
+.underline {
+  text-align: center;
+  margin: 24px 0;
+}
+
+.underline::after {
+  content: '';
+  position: absolute;
+  bottom: -12.8px;
+  left: 50%;
+  background: #172b4d;
+  width: 50px;
+  height: 1.6px;
+  transform: translate(-50%);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin: 24px 22px 24px 26px;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.card-head {
+  width: 100%;
+  height: 252px;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.work-tools {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 29px;
+}
+
+.work-tool {
+  margin-right: 16px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  font-style: normal;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+  padding: 8px 8px;
+  color: #3a4a42;
+}
+
+.md-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  font-style: normal;
+  color: #3a4a42;
+  margin: 16px 0;
+}
+
+.see-project-btn {
+  background-color: #36b37f;
+  border-radius: 4px;
+  text-align: center;
+  width: 122px;
+  height: 48px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 3%;
+  font-style: normal;
+  color: #fff;
+  left: calc(50% - 122px / 2 + 0.5px);
+}
+
+.see-project-btn:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.see-project-btn:focus {
+  background-color: #008552;
+}
+
+.btn-large {
+  width: 159px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 24px auto;
+  box-sizing: border-box;
+}
+
+.skillset {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.skill-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto;
+  border: 1px solid #c1c7d0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #ebf0ee;
+  height: 400px;
+  width: 80%;
+}
+
+.skillset-icon {
+  margin-bottom: 64px;
+  margin-top: 40px;
+  width: 80px;
+  height: 80px;
+  left: calc(50% - 80px / 2 + 0.5px);
+  top: calc(50% - 80px / 2);
+  background-color: #fff;
+  box-shadow: 0 16px 24px rgba(37, 47, 137, 0.08);
+  padding: 20px;
+  border-radius: 60px;
+  box-sizing: border-box;
+}
+
+.skillset-icon img {
+  width: 100%;
+}
+
+.sm-text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
+  color: #344563;
+  margin: 24px 0;
+}
+
+.skill-tools {
+  display: flex;
+  flex-direction: row;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 72px;
+  box-sizing: border-box;
+}
+
+.skill-tool {
+  margin-right: 12px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 3%;
+  font-style: normal;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  color: #36b37e;
+  box-sizing: border-box;
 }
