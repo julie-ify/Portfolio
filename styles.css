@@ -15,6 +15,8 @@ a {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header-content {
@@ -248,7 +250,7 @@ ul {
   box-sizing: border-box;
 }
 
-.skill {
+.skillset {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -270,7 +272,7 @@ ul {
   width: 80%;
 }
 
-.language-icon {
+.skillset-icon {
   margin-bottom: 64px;
   margin-top: 40px;
   width: 80px;
@@ -284,7 +286,7 @@ ul {
   box-sizing: border-box;
 }
 
-.language-icon img {
+.skillset-icon img {
   width: 100%;
 }
 
@@ -318,7 +320,6 @@ ul {
   background-color: #fff;
   border-radius: 8px;
   padding: 12px;
-  color: #3a4a42;
   color: #36b37e;
   box-sizing: border-box;
 }
