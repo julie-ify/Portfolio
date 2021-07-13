@@ -208,14 +208,34 @@
         </ul>
       </section>
       <section class="contact-form">
-        <h1 class="headline-text">
+        <h1 class="headline-text form-header">
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
         </h1>
-        <form action="https://formspree.io/f/mrgraejl" method="POST" class="form" required>
-          <input type="text" name="user_name" id="name" maxlength="30" placeholder="Full name" required>
-          <input type="email" name="user_email" id="email" placeholder="Email address" required>
-          <textarea name="message" id="msg" cols="30" rows="10" maxlength="500" required>Enter text here</textarea>
+        <form
+          action="https://formspree.io/f/mrgraejl"
+          method="POST"
+          class="form"
+          required
+        >
+          <input
+            type="text"
+            name="user_name"
+            id="name"
+            maxlength="30"
+            placeholder="Full name"
+            required
+          />
+          <input
+            type="email"
+            name="user_email"
+            id="email"
+            placeholder="Email address"
+            required
+          />
+          <textarea name="message" id="msg" maxlength="500" required>
+Enter text here</textarea
+          >
           <button type="submit">Get in touch</button>
         </form>
         <ul class="contact-icons">
@@ -235,6 +255,7 @@
             <img src="images/angelist.png" alt="angelist" />
           </li>
         </ul>
+        <p class="footer-email">Julieifionu@gmail.com</p>
       </section>
     </main>
   </body>
