@@ -4,10 +4,10 @@
 
 > Mobile version of my portfolio website using figma template.
 
-![screenshot](images/screenshot1.png)
-![screenshot](images/screenshot2.png)
-![screenshot](images/screenshot3.png)
-![screenshot](images/screenshot4.png)
+![screenshot](./images/screenshot1.png)
+![screenshot](./images/screenshot2.png)
+![screenshot](./images/screenshot3.png)
+![screenshot](./images/screenshot4.png)
 
 This project entails Building a mobile version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
 
