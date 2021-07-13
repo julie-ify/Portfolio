@@ -341,7 +341,7 @@ ul {
 
 .form {
   width: 100%;
-  margin: 2rem auto;
+  margin: 46px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -377,8 +377,8 @@ textarea {
 }
 
 button[type='submit'] {
-  margin: 0 10px 46px;
-  background-color: #36b37f;
+  margin: 0 10px;
+  background-color: #8fa79d;
   border-radius: 4px;
   height: 48px;
   position: static;
@@ -432,6 +432,7 @@ button[type='submit']:focus {
 
 .footer-icon img {
   width: 19.99px;
+  color: #42526E;
 }
 
 .footer-email {
