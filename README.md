@@ -4,7 +4,10 @@
 
 > Mobile version of my portfolio website using figma template.
 
-![screenshot](./images/screenshot1.png)
+![screenshot](./images/Screenshot1.png)
+![screenshot](./images/Screenshot2.png)
+![screenshot](./images/Screenshot3.png)
+![screenshot](./images/Screenshot4.png)
 
 This project entails Building a mobile version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
 
@@ -19,6 +22,10 @@ This project entails Building a mobile version of my portfolio website from scra
 - Git
 - Html
 - Css
+
+## Live Demo
+
+[Live Demo Link](https://julie-ify.github.io/Portfolio-Mobile-version/)
 
 ## Getting Started
 

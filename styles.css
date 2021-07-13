@@ -269,7 +269,7 @@ ul {
   border-radius: 8px;
   background-color: #ebf0ee;
   height: 400px;
-  width: 80%;
+  width: 90%;
 }
 
 .skillset-icon {
@@ -322,4 +322,120 @@ ul {
   padding: 12px;
   color: #36b37e;
   box-sizing: border-box;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 24px;
+}
+
+.form-header {
+  margin-top: 58px;
+  text-align: center;
+  width: 100%;
+}
+
+.form {
+  width: 100%;
+  margin: 46px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 24px;
+  line-height: 24px;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+input[type='text'],
+input[type='email'] {
+  height: 48px;
+  padding: 12px 15px;
+  color: #6b778c;
+  border: 1px solid #d0d9d4;
+}
+
+textarea {
+  height: 114px;
+  padding: 12px;
+  color: #091e42;
+  border: 1px solid #60c095;
+}
+
+button[type='submit'] {
+  margin: 0 10px;
+  background-color: #36b37f;
+  border-radius: 4px;
+  height: 48px;
+  position: static;
+  width: 129px;
+  left: 99px;
+  top: calc(50% - 48px / 2 + 141px);
+  padding: 12px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+}
+
+button[type='submit']:hover {
+  background-color: #36b37f;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+button[type='submit']:focus {
+  background-color: #008552;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 24px;
+  margin-bottom: 3rem;
+}
+
+.footer-icons {
+  position: static;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19.9px;
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  width: 19.99px;
+  margin-right: 20px;
+  color: #505f79;
+}
+
+.footer-icon img {
+  width: 19.99px;
+  color: #42526e;
+}
+
+.footer-email {
+  margin: 0 auto;
+  color: #42526e;
 }
