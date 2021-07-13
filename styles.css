@@ -434,6 +434,7 @@ button[type='submit']:focus {
   width: 19.99px;
 }
 
-.footer-emial {
+.footer-email {
   margin: 0 auto;
+  color: #42526E;
 }
