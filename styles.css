@@ -403,3 +403,37 @@ button[type='submit']:hover {
 button[type='submit']:focus {
   background-color: #008552;
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 24px;
+  margin-bottom: 3rem;
+}
+
+.footer-icons {
+  position: static;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 19.9px;
+  margin-bottom: 10px;
+}
+
+.footer-icon {
+  width: 19.99px;
+  margin-right: 20px;
+  color: #505f79;
+}
+
+.footer-icon img {
+  width: 19.99px;
+}
+
+.footer-emial {
+  margin: 0 auto;
+}
