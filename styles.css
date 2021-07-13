@@ -336,10 +336,11 @@ ul {
 .form-header {
   margin-top: 58px;
   text-align: center;
+  width: 100%;
 }
 
 .form {
-  width: 80%;
+  width: 100%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
