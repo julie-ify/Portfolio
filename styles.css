@@ -130,14 +130,29 @@ ul {
 
 /* Work & About */
 
+.works {
+  width: 95%;
+  margin: 0 auto;
+}
+
 .works-header {
-  margin-bottom: 62px;
   position: relative;
+  margin: 24px auto 62px;
+  color: #172b4d;
+  text-align: center;
 }
 
 .underline {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+  font-style: normal;
   text-align: center;
   margin: 24px 0;
+}
+
+.break {
+  display: block;
 }
 
 .underline::after {
@@ -188,6 +203,7 @@ ul {
 .work-tools {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   font-weight: 600;
@@ -196,6 +212,7 @@ ul {
 
 .work-tool {
   margin-right: 16px;
+  margin-bottom: 16px;
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 3%;
@@ -246,6 +263,7 @@ ul {
 }
 
 .about-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -254,12 +272,32 @@ ul {
   box-sizing: border-box;
 }
 
+.about {
+  position: relative;
+}
+
+.frame1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 90px;
+}
+
+.frame2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90px;
+}
+
 .skillset {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .skill-flex {
@@ -273,7 +311,7 @@ ul {
   border-radius: 8px;
   background-color: #ebf0ee;
   height: 400px;
-  width: 90%;
+  width: 95%;
 }
 
 .skillset-icon {
@@ -333,14 +371,19 @@ ul {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
-  margin: 0 24px;
+  width: 95%;
+  margin: 0 24px 145px;
 }
 
 .form-header {
-  margin-top: 58px;
   text-align: center;
-  width: 100%;
+  width: 90%;
+  margin: 24px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+  font-style: normal;
+  color: #172b4d;
 }
 
 .form {
@@ -431,12 +474,10 @@ button[type='submit']:focus {
 .footer-icon {
   width: 19.99px;
   margin-right: 20px;
-  color: #505f79;
 }
 
-.footer-icon img {
-  width: 19.99px;
-  color: #42526e;
+.footer-icon a {
+  color: #505f79;
 }
 
 .footer-email {
@@ -513,6 +554,64 @@ button[type='submit']:focus {
     height: 40px;
     padding: 8px;
     border-radius: 8px;
+  }
+
+  .header-work {
+    width: 100%;
+  }
+
+  .underline::after {
+    display: none;
+  }
+
+  .break {
+    display: inline;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skillset {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-form {
+    flex-direction: row;
+    column-gap: 24px;
+    width: 95%;
+    margin: 84px auto 145px;
+  }
+
+  .form-header-wrapper {
+    width: 45%;
+  }
+
+  .form-header {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .form {
+    width: 55%;
+    margin: 0 24px;
+  }
+
+  button[type='submit'] {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skillset {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
