@@ -3,6 +3,9 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 28px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 main {
@@ -19,13 +22,23 @@ ul {
   margin: 0;
 }
 
+.head {
+  background-image: url('images/bg-img.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  height: 20px;
-  padding: 20px;
+  height: 10px;
+  padding: 15px 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
 }
 
 .logo {
@@ -58,10 +71,6 @@ ul {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  background-image: url('images/bg-img.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .headline-text {
@@ -104,24 +113,19 @@ ul {
   margin-right: 20px;
 }
 
-.contact-icon img {
-  width: 19.99px;
+.contact-icon a {
   color: #505f79;
 }
 
 .arrow-btn {
+  cursor: pointer;
   padding: 8px;
   width: 40px;
   height: 40px;
   left: calc(50% - 40px / 2 + 0.5px);
-  bottom: 4px;
   background-color: #fff;
   border-radius: 32px;
   border: 1px solid #dfe1e6;
-}
-
-.arrow-btn img {
-  width: 19.9px;
 }
 
 /* Work & About */
@@ -438,4 +442,82 @@ button[type='submit']:focus {
 .footer-email {
   margin: 0 auto;
   color: #42526e;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  height: 40px;
+}
+
+.menu a {
+  color: #344567;
+}
+
+.menu-list {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 0 10px;
+  padding: 10px 12px;
+}
+
+.menu .mg-0 a {
+  margin-right: 0;
+}
+
+/* Desktop Version */
+
+@media only screen and (min-width: 883px) {
+  header.header-content {
+    display: none;
+  }
+
+  .headline {
+    height: 756px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px 0;
+    margin: 20px;
+  }
+
+  .headline-text {
+    width: 920px;
+    margin: 24px 0;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: 0.37px;
+  }
+
+  .headline-paragraph {
+    width: 70%;
+    line-height: 32px;
+    margin: 24px 0;
+  }
+
+  .contact-icons {
+    width: 200px;
+    height: 40px;
+    margin: 24px 0;
+  }
+
+  .contact-icon {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 8px;
+  }
+}
+
+@media only screen and (max-width: 883px) {
+  header.menu-nav {
+    display: none;
+  }
 }
