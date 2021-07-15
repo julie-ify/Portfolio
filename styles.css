@@ -157,7 +157,7 @@ p {
 
 .works-header {
   position: relative;
-  margin: 60px auto 62px;
+  margin: 100px auto 62px;
   color: #172b4d;
   text-align: center;
 }
@@ -344,7 +344,7 @@ p {
 
 .frame-4 {
   position: absolute;
-  bottom: 25px;
+  bottom: 45px;
   left: 274px;
   width: 70px;
 }
@@ -358,7 +358,6 @@ p {
 
 .skillset {
   display: grid;
-  gap: 1rem;
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
@@ -431,9 +430,6 @@ p {
   padding: 12px;
   color: #36b37e;
   box-sizing: border-box;
-}
-
-.skill-1 {
 }
 
 .contact-form {
@@ -640,8 +636,8 @@ button[type='submit']:focus {
     border-radius: 8px;
   }
 
-  .header-work {
-    width: 100%;
+  .works-header {
+    margin: 50px auto 62px;
   }
 
   .underline::after {
@@ -663,28 +659,37 @@ button[type='submit']:focus {
   .contact-form {
     flex-direction: row;
     column-gap: 24px;
-    width: 95%;
+    width: 90%;
     margin: 84px auto 145px;
+  }
+
+  .form {
+    margin-top: 0;
+    margin-right: 24px;
   }
 
   .form-header-wrapper {
     width: 45%;
+    align-self: flex-start;
   }
 
   .form-header {
     font-weight: bold;
     font-size: 30px;
-    text-align: center;
-  }
-
-  .form {
-    width: 55%;
-    margin: 0 24px;
-    align-items: flex-start;
+    text-align: left;
+    margin-right: 24px;
+    width: 100%;
   }
 
   button[type='submit'] {
     margin: 0;
+    align-self: flex-start;
+  }
+
+  .frame-3,
+  .frame-1,
+  .frame-11 {
+    width: 100px;
   }
 
   .footer {
