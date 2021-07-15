@@ -93,7 +93,7 @@ p {
 
 .headline-text {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 52px;
   font-style: normal;
   color: #172b4d;
@@ -164,7 +164,7 @@ p {
 
 .underline {
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 52px;
   font-style: normal;
   text-align: center;
@@ -180,9 +180,9 @@ p {
   position: absolute;
   bottom: -12.8px;
   left: 50%;
-  background: #172b4d;
-  width: 50px;
-  height: 1.6px;
+  background: #36b37e;
+  width: 48px;
+  height: 4px;
   transform: translate(-50%);
   padding: 0;
   margin: 0;
@@ -612,7 +612,7 @@ button[type='submit']:focus {
     width: 920px;
     margin: 100px auto 24px;
     font-size: 48px;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 60px;
     letter-spacing: 0.37px;
   }
