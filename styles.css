@@ -12,7 +12,7 @@ main {
   position: relative;
   padding: 0;
   border-bottom: 1px solid #dfe1e6;
-  margin-bottom: 25px;
+  margin: 0 auto 25px;
 }
 
 a {
@@ -25,18 +25,29 @@ ul {
   margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .head {
   background-image: url('images/bg-img.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 
 .header-content {
   position: fixed;
   width: 100%;
+  z-index: 6;
+  background-color: #fff;
 }
 
 .header-wrapper {
@@ -45,11 +56,8 @@ ul {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  padding: 20px 20px;
   height: 15px;
-  padding: 15px 20px;
-  background-color: #fff;
-  margin-bottom: 20px;
-  z-index: 5;
 }
 
 .logo {
@@ -75,24 +83,24 @@ ul {
 }
 
 .headline {
-  height: 600px;
+  height: 648px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: 0 auto;
   text-align: center;
-  padding-top: 2rem;
 }
 
 .headline-text {
-  margin: 24px;
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
   font-style: normal;
   color: #172b4d;
   text-align: center;
+  width: 327px;
+  margin-top: 100px;
+  margin-bottom: 38px;
 }
 
 .primary-color {
@@ -101,7 +109,6 @@ ul {
 }
 
 .headline-paragraph {
-  position: static;
   font-weight: normal;
   font-style: normal;
   font-size: 20px;
@@ -109,6 +116,7 @@ ul {
   text-align: center;
   color: #172b4d;
   margin: 24px;
+  width: 70%;
 }
 
 .contact-icons {
@@ -118,7 +126,7 @@ ul {
   justify-content: center;
   align-items: center;
   width: 19.9px;
-  margin-bottom: 50px;
+  margin: 20px 0 50px;
 }
 
 .contact-icon {
@@ -149,7 +157,7 @@ ul {
 
 .works-header {
   position: relative;
-  margin: 24px auto 62px;
+  margin: 60px auto 62px;
   color: #172b4d;
   text-align: center;
 }
@@ -185,8 +193,9 @@ ul {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  margin: 24px 22px 24px 26px;
+  width: 90%;
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .card {
@@ -280,8 +289,32 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin: 24px auto;
+  margin: 24px auto 59px;
   box-sizing: border-box;
+  width: 100%;
+}
+
+.about-text {
+  margin: 57px 24px 24px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 52px;
+  font-style: normal;
+  color: #172b4d;
+  text-align: center;
+  width: 70%;
+}
+
+.about-paragraph {
+  position: static;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
+  margin: 24px;
+  width: 70%;
 }
 
 .about {
@@ -320,16 +353,17 @@ ul {
   position: absolute;
   bottom: 2px;
   right: 0;
-  width: 100px;
+  width: 60px;
 }
 
 .skillset {
   display: grid;
+  gap: 1rem;
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -382,7 +416,7 @@ ul {
   align-items: center;
   justify-content: center;
   font-weight: 600;
-  margin-bottom: 72px;
+  margin: 0 28px 72px;
   box-sizing: border-box;
 }
 
@@ -399,19 +433,22 @@ ul {
   box-sizing: border-box;
 }
 
+.skill-1 {
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 95%;
-  margin: 0 24px 145px;
+  margin: 60px auto 50px;
 }
 
 .form-header {
   text-align: center;
-  width: 90%;
-  margin: 24px;
+  width: 85%;
+  margin: 24px auto;
   font-size: 40px;
   font-weight: bold;
   line-height: 52px;
@@ -420,8 +457,8 @@ ul {
 }
 
 .form {
-  width: 100%;
-  margin: 46px auto;
+  width: 85%;
+  margin: 58px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -518,6 +555,7 @@ button[type='submit']:focus {
   color: #42526e;
 }
 
+/* Nav menu */
 .menu {
   display: flex;
   flex-direction: row;
@@ -525,7 +563,7 @@ button[type='submit']:focus {
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  height: 40px;
+  height: 72px;
 }
 
 .menu a {
@@ -537,7 +575,7 @@ button[type='submit']:focus {
   font-size: 15px;
   line-height: 20px;
   margin: 0 10px;
-  padding: 10px 12px;
+  padding: 15px 12px;
 }
 
 .menu .mg-0 a {
@@ -557,6 +595,10 @@ button[type='submit']:focus {
   .frame-4 {
     display: none;
   }
+
+  main {
+    border-bottom: none;
+  }
 }
 
 /* Desktop Version */
@@ -568,17 +610,11 @@ button[type='submit']:focus {
 
   .headline {
     height: 756px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 16px 0;
-    margin: 20px;
   }
 
   .headline-text {
     width: 920px;
-    margin: 24px 0;
+    margin: 100px auto 24px;
     font-size: 48px;
     font-weight: 800;
     line-height: 60px;
