@@ -544,6 +544,21 @@ button[type='submit']:focus {
   margin-right: 0;
 }
 
+/* Mobile Version */
+@media only screen and (max-width: 883px) {
+  header.menu-nav {
+    display: none;
+  }
+
+  .frame-2 {
+    display: none;
+  }
+
+  .frame-4 {
+    display: none;
+  }
+}
+
 /* Desktop Version */
 
 @media only screen and (min-width: 883px) {
@@ -652,19 +667,5 @@ button[type='submit']:focus {
 
   .skillset {
     grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media only screen and (max-width: 883px) {
-  header.menu-nav {
-    display: none;
-  }
-
-  .frame-2 {
-    display: none;
-  }
-
-  .frame-4 {
-    display: none;
   }
 }
