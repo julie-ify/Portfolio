@@ -601,7 +601,7 @@ button[type='submit']:focus {
 }
 
 /* Mobile Version */
-@media only screen and (max-width: 995px) {
+@media only screen and (max-width: 994px) {
   header.menu-nav {
     display: none;
   }
@@ -623,7 +623,7 @@ button[type='submit']:focus {
 
 /* Desktop Version */
 
-@media only screen and (min-width: 996px) {
+@media only screen and (min-width: 995px) {
   header.header-content {
     display: none;
   }
