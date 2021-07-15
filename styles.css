@@ -383,8 +383,12 @@ p {
   box-sizing: border-box;
   border-radius: 8px;
   background-color: #ebf0ee;
-  height: 400px;
+  height: 500px;
   width: 95%;
+}
+
+.skill-1 {
+  padding: 0 20px 20px;
 }
 
 .skillset-icon {
@@ -597,7 +601,7 @@ button[type='submit']:focus {
 }
 
 /* Mobile Version */
-@media only screen and (max-width: 883px) {
+@media only screen and (max-width: 995px) {
   header.menu-nav {
     display: none;
   }
@@ -619,7 +623,7 @@ button[type='submit']:focus {
 
 /* Desktop Version */
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 996px) {
   header.header-content {
     display: none;
   }
@@ -710,6 +714,10 @@ button[type='submit']:focus {
   .frame-1,
   .frame-11 {
     width: 100px;
+  }
+
+  .frame-33 {
+    display: none;
   }
 
   .footer {
