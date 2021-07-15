@@ -523,23 +523,24 @@ button[type='submit']:focus {
   align-items: center;
   justify-content: center;
   width: 90%;
-  margin: 0 24px;
+  margin: 0 auto;
   margin-bottom: 3rem;
 }
 
 .footer-icons {
-  position: static;
-  list-style: none;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 19.9px;
   margin-bottom: 10px;
 }
 
 .footer-icon {
   width: 19.99px;
-  margin-right: 20px;
+  margin-right: 25px;
+}
+
+.last {
+  margin-left: 12px;
 }
 
 .footer-icon a {
@@ -547,7 +548,13 @@ button[type='submit']:focus {
 }
 
 .footer-email {
-  margin: 0 auto;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 32px;
+  text-align: center;
+}
+
+.footer-email a {
   color: #42526e;
 }
 
