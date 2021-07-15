@@ -351,9 +351,16 @@ p {
 
 .frame-3 {
   position: absolute;
-  bottom: 2px;
+  bottom: 17px;
   right: 0;
   width: 60px;
+}
+
+.frame-33 {
+  position: absolute;
+  bottom: 22px;
+  right: 0;
+  width: 50px;
 }
 
 .skillset {
@@ -518,11 +525,15 @@ button[type='submit']:focus {
 }
 
 .footer {
+  width: 100%;
+}
+
+.footer-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 90%;
   margin: 0 auto;
   margin-bottom: 3rem;
 }
@@ -591,7 +602,9 @@ button[type='submit']:focus {
     display: none;
   }
 
-  .frame-2 {
+  .frame-2,
+  .frame-4,
+  .frame-3 {
     display: none;
   }
 
