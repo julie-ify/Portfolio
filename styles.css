@@ -297,7 +297,7 @@ p {
 .about-text {
   margin: 57px 24px 24px;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 52px;
   font-style: normal;
   color: #172b4d;
@@ -446,7 +446,7 @@ p {
   width: 85%;
   margin: 24px auto;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 900;
   line-height: 52px;
   font-style: normal;
   color: #172b4d;
@@ -606,7 +606,7 @@ button[type='submit']:focus {
 
 /* Desktop Version */
 
-@media only screen and (min-width: 883px) {
+@media only screen and (min-width: 1050px) {
   header.header-content {
     display: none;
   }
@@ -656,11 +656,11 @@ button[type='submit']:focus {
   }
 
   .grid-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .skillset {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .contact-form {
@@ -676,7 +676,7 @@ button[type='submit']:focus {
   }
 
   .form-header-wrapper {
-    width: 45%;
+    width: 50%;
     align-self: flex-start;
   }
 
@@ -705,15 +705,5 @@ button[type='submit']:focus {
 
   .footer-email {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .grid-container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .skillset {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
