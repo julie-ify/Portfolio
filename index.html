@@ -4,56 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Portfolio Mobile Version</title>
   </head>
   <body>
     <main>
-      <header class="header-content">
-        <a href="#" class="logo">Welcome</a>
-        <nav class="hamburger">
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-          <div class="btn-line"></div>
-        </nav>
-      </header>
-      <section class="headline">
-        <h1 class="headline-text">
-          Hey there. I'm Juliana
-          <span class="primary-color">I'm a software developer</span>
-        </h1>
-        <p class="headline-paragraph">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hestiate to contact me.
-        </p>
-        <ul class="contact-icons">
-          <li class="contact-icon">
-            <img src="images/twitter.png" alt="twitter" />
-          </li>
-          <li class="contact-icon">
-            <img src="images/linkedin.png" alt="linkedin" />
-          </li>
-          <li class="contact-icon">
-            <img src="images/medium.png" alt="medium" />
-          </li>
-          <li class="contact-icon">
-            <img src="images/github.png" alt="github" />
-          </li>
-          <li class="contact-icon">
-            <img src="images/angelist.png" alt="angelist" />
-          </li>
-        </ul>
-        <button class="arrow-btn" type="button">
-          <img src="images/chevron-down.png" alt="chevron-down" />
-        </button>
+      <section class="head">
+        <header class="header-content">
+          <div class="header-wrapper">
+            <a href="#" class="logo">Welcome</a>
+            <nav class="hamburger">
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+              <div class="btn-line"></div>
+            </nav>
+          </div>
+        </header>
+        <header class="menu-nav">
+          <ul class="menu">
+            <li class="menu-list"><a href="#">Portfolio</a></li>
+            <li class="menu-list"><a href="#">About</a></li>
+            <li class="menu-list mg-0"><a href="#">Contact</a></li>
+          </ul>
+        </header>
+        <section class="headline">
+          <h1 class="headline-text">
+            Hey there. I'm Juliana
+            <span class="primary-color">I'm a software developer</span>
+          </h1>
+          <p class="headline-paragraph">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+          <ul class="contact-icons">
+            <li class="contact-icon">
+              <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            </li>
+            <li class="contact-icon">
+              <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            </li>
+            <li class="contact-icon">
+              <a href="#"><i class="fab fa-medium-m fa-2x"></i></a>
+            </li>
+            <li class="contact-icon">
+              <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            </li>
+            <li class="contact-icon">
+              <a href="#"><i class="fab fa-angellist fa-2x"></i></a>
+            </li>
+          </ul>
+          <button class="arrow-btn" type="button">
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </section>
       </section>
+
       <section class="works">
         <div class="works-header">
-          <h1 class="headline-text underline">
-            My Recent <br />
-            Works
-          </h1>
+          <h1 class="underline">My Recent <span class="break">Works</span></h1>
         </div>
         <ul class="grid-container">
           <li class="card">
@@ -156,8 +171,9 @@
       </section>
       <section class="about">
         <div class="about-content">
-          <h1 class="headline-text">About me</h1>
-          <p class="headline-paragraph">
+          <img src="images/Frame1.png" alt="frame" class="frame-1" />
+          <h1 class="about-text">About me</h1>
+          <p class="about-paragraph">
             I can help you build a product , feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
@@ -165,6 +181,7 @@
           <button class="see-project-btn btn-large" type="button">
             Get My Resume
           </button>
+          <img src="images/Frame-11.png" alt="frame" class="frame-11" />
         </div>
         <ul class="skillset">
           <li class="skill-flex">
@@ -172,7 +189,7 @@
               <img src="images/icon1.png" alt="language-icon" />
             </div>
             <h3 class="sm-text">Languages</h3>
-            <ul class="skill-tools">
+            <ul class="skill-tools skill-1">
               <li class="skill-tool">JavaScript</li>
               <li class="skill-tool">Ruby</li>
               <li class="skill-tool">Html</li>
@@ -208,10 +225,12 @@
         </ul>
       </section>
       <section class="contact-form">
-        <h1 class="headline-text form-header">
-          I'm always interested in hearing about new projects, so if you'd like
-          to chat please get in touch.
-        </h1>
+        <div class="form-header-wrapper">
+          <h1 class="form-header">
+            I'm always interested in hearing about new projects, so if you'd
+            like to chat please get in touch.
+          </h1>
+        </div>
         <form
           action="https://formspree.io/f/mrgraejl"
           method="POST"
@@ -242,28 +261,33 @@
           ></textarea>
           <button type="submit">Get in touch</button>
         </form>
+        <img src="images/Frame2.png" alt="Frame" class="frame-2" />
+        <img src="images/Frame3.png" alt="Frame" class="frame-3" />
+        <img src="images/Frame4.png" alt="Frame" class="frame-4" />
       </section>
-
-      <footer class="footer">
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
         <ul class="footer-icons">
-          <li class="footer-icon">
-            <img src="images/twitter.png" alt="twitter" />
+          <li class="footer-icon last">
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
           </li>
           <li class="footer-icon">
-            <img src="images/linkedin.png" alt="linkedin" />
+            <a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a>
           </li>
           <li class="footer-icon">
-            <img src="images/medium.png" alt="medium" />
+            <a href="#"><i class="fab fa-medium-m fa-2x"></i></a>
           </li>
           <li class="footer-icon">
-            <img src="images/github.png" alt="github" />
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
           </li>
           <li class="footer-icon">
-            <img src="images/angelist.png" alt="angelist" />
+            <a href="#"><i class="fab fa-angellist fa-2x"></i></a>
           </li>
         </ul>
-        <p class="footer-email">Julieifionu@gmail.com</p>
-      </footer>
-    </main>
+        <p class="footer-email"><a href="#">myemailhere@email.com</a></p>
+        <img src="images/Frame3.png" alt="Frame" class="frame-33" />
+      </div>
+    </footer>
   </body>
 </html>
