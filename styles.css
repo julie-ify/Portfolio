@@ -299,6 +299,7 @@ p {
   font-style: normal;
   color: #fff;
   left: calc(50% - 122px / 2 + 0.5px);
+  transition: background-color 0.7s;
 }
 
 .see-project-btn:hover {
@@ -548,6 +549,7 @@ button[type='submit'] {
   line-height: 24px;
   font-weight: 500;
   letter-spacing: 0.03em;
+  transition: background-color 0.7s;
 }
 
 button[type='submit']:hover {
