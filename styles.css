@@ -66,6 +66,12 @@ p {
   font-style: normal;
   margin: 0;
   color: #28352f;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.logo:hover {
+  color: #36b37f;
 }
 
 .hamburger {
