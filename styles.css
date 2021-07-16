@@ -133,6 +133,20 @@ p {
   margin-right: 20px;
 }
 
+/* Links */
+
+.footer-email a {
+  color: #42526e;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.menu a {
+  color: #344567;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
 .contact-icon a,
 .footer-icon a {
   color: #505f79;
@@ -141,7 +155,9 @@ p {
 }
 
 .contact-icon a:hover,
-.footer-icon a:hover {
+.footer-icon a:hover,
+.footer-email a:hover,
+.menu a:hover {
   color: #36b37e;
 }
 
@@ -154,6 +170,13 @@ p {
   background-color: #fff;
   border-radius: 32px;
   border: 1px solid #dfe1e6;
+  color: #344563;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.arrow-btn:hover {
+  color: #36b37e;
 }
 
 /* Work & About */
@@ -573,10 +596,6 @@ button[type='submit']:focus {
   text-align: center;
 }
 
-.footer-email a {
-  color: #42526e;
-}
-
 /* Nav menu */
 .menu {
   display: flex;
@@ -586,10 +605,6 @@ button[type='submit']:focus {
   width: 100%;
   margin: 0 auto;
   height: 72px;
-}
-
-.menu a {
-  color: #344567;
 }
 
 .menu-list {
