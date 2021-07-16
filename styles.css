@@ -531,11 +531,20 @@ input[type='email'] {
   border: 1px solid #d0d9d4;
 }
 
+input[type='text']:hover,
+input[type='email']:hover {
+padding: 12px 20px;
+}
+
 textarea {
   height: 114px;
   padding: 12px;
   color: #091e42;
   border: 1px solid #60c095;
+}
+
+textarea:hover {
+  padding: 12px 20px;
 }
 
 button[type='submit'] {
