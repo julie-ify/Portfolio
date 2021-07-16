@@ -133,8 +133,16 @@ p {
   margin-right: 20px;
 }
 
-.contact-icon a {
+.contact-icon a,
+.footer-icon a {
   color: #505f79;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.contact-icon a:hover,
+.footer-icon a:hover {
+  color: #36b37e;
 }
 
 .arrow-btn {
@@ -556,10 +564,6 @@ button[type='submit']:focus {
 
 .last {
   margin-left: 12px;
-}
-
-.footer-icon a {
-  color: #505f79;
 }
 
 .footer-email {
