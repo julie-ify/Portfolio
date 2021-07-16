@@ -66,6 +66,12 @@ p {
   font-style: normal;
   margin: 0;
   color: #28352f;
+  transition: 1s;
+  transform: rotate(360deg);
+}
+
+.logo:hover {
+  color: #36b37f;
 }
 
 .hamburger {
@@ -133,8 +139,32 @@ p {
   margin-right: 20px;
 }
 
-.contact-icon a {
+/* Links */
+
+.footer-email a {
+  color: #42526e;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.menu a {
+  color: #344567;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.contact-icon a,
+.footer-icon a {
   color: #505f79;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.contact-icon a:hover,
+.footer-icon a:hover,
+.footer-email a:hover,
+.menu a:hover {
+  color: #36b37e;
 }
 
 .arrow-btn {
@@ -146,6 +176,13 @@ p {
   background-color: #fff;
   border-radius: 32px;
   border: 1px solid #dfe1e6;
+  color: #344563;
+  transition-property: color;
+  transition-duration: 0.7s;
+}
+
+.arrow-btn:hover {
+  color: #36b37e;
 }
 
 /* Work & About */
@@ -268,6 +305,7 @@ p {
   font-style: normal;
   color: #fff;
   left: calc(50% - 122px / 2 + 0.5px);
+  transition: background-color 0.7s;
 }
 
 .see-project-btn:hover {
@@ -493,11 +531,20 @@ input[type='email'] {
   border: 1px solid #d0d9d4;
 }
 
+input[type='text']:hover,
+input[type='email']:hover {
+  padding: 12px 20px;
+}
+
 textarea {
   height: 114px;
   padding: 12px;
   color: #091e42;
   border: 1px solid #60c095;
+}
+
+textarea:hover {
+  padding: 12px 20px;
 }
 
 button[type='submit'] {
@@ -517,6 +564,7 @@ button[type='submit'] {
   line-height: 24px;
   font-weight: 500;
   letter-spacing: 0.03em;
+  transition: background-color 0.7s;
 }
 
 button[type='submit']:hover {
@@ -558,19 +606,11 @@ button[type='submit']:focus {
   margin-left: 12px;
 }
 
-.footer-icon a {
-  color: #505f79;
-}
-
 .footer-email {
   font-size: 20px;
   font-weight: normal;
   line-height: 32px;
   text-align: center;
-}
-
-.footer-email a {
-  color: #42526e;
 }
 
 /* Nav menu */
@@ -582,10 +622,6 @@ button[type='submit']:focus {
   width: 100%;
   margin: 0 auto;
   height: 72px;
-}
-
-.menu a {
-  color: #344567;
 }
 
 .menu-list {
