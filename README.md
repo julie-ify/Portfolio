@@ -2,14 +2,15 @@
 
 # Portfolio-Mobile-Version
 
-> Mobile version of my portfolio website using figma template.
+> Desktop version of my portfolio website using figma template.
 
 ![screenshot](./images/project1.png)
 ![screenshot](./images/project2.png)
 ![screenshot](./images/project3.png)
 ![screenshot](./images/project4.png)
+![screenshot](./images/project5.png)
 
-This project entails Building a mobile version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
+This project entails Building a mobile and desktop version of my portfolio website from scratch using a design template from figma to replicate the design to my portfolio.
 
 ## Built With
 
