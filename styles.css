@@ -88,6 +88,45 @@ p {
   background-color: #000;
 }
 
+.mobile-menu {
+  display: none;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.cross-arrow {
+  font-size: 40px;
+  position: absolute;
+  right: 6%;
+  top: 3%;
+  width: 12px;
+  height: 12px;
+  color: #67798e;
+}
+
+.mobile-nav {
+  margin-top: 108px;
+  margin-left: 28px;
+}
+
+.menu-mobile-list {
+  margin-bottom: 40px;
+}
+
+.menu-mobile-list a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #3a4a42;
+}
+
 .headline {
   height: 648px;
   display: flex;
