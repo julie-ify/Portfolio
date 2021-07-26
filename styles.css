@@ -89,6 +89,7 @@ p {
 }
 
 .mobile-menu {
+  display: none;
   background-color: #fff;
   position: absolute;
   top: 0;
