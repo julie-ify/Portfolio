@@ -9,5 +9,14 @@ function OpenSideMenu() {
     menu.style.display = 'block';
     sideMenu = true;
   }
+  else {
+    CloseSideMenu()
+  }
+}
+
+function CloseSideMenu() {
+    menu.style.display = 'none';
+    sideMenu = false;
 }
 openMenu.addEventListener('click', OpenSideMenu);
+closeMenu.addEventListener('click', CloseSideMenu);
