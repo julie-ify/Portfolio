@@ -91,7 +91,7 @@ p {
 .mobile-menu {
   display: none;
   background-color: #fff;
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 10;
   left: 0;
@@ -100,9 +100,7 @@ p {
 }
 
 .cross-arrow {
-  /* transform: scale(10); */
   font-size: 40px;
-  /* background-color: black; */
   position: absolute;
   right: 6%;
   top: 3%;
