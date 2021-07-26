@@ -109,7 +109,7 @@ p {
   color: #67798e;
 }
 
-.mobile-nav  {
+.mobile-nav {
   margin-top: 108px;
   margin-left: 28px;
 }
@@ -119,7 +119,7 @@ p {
 }
 
 .menu-mobile-list a {
-  font-family: Inter;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
