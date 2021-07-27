@@ -101,7 +101,7 @@ function createCard(card, index) {
         <h2 class="md-text">${card.name}</h2>
         <ul class="work-tools">`
     for (let i = 0; i < card.technologies.length; i += 1) {
-      createCardHTML += `<li>${card.technologies[i]}</li>`;
+      createCardHTML += `<li class="work-tool">${card.technologies[i]}</li>`;
     }    
     createCardHTML +=    `</ul>
         <button class="see-project-btn" type="button">${card.liveUrl}</button>
@@ -110,4 +110,55 @@ function createCard(card, index) {
 
       return createCardHTML;
 }
+
+function createModal(card, index) {
+  let createModalHTML = 
+  `<section class="modal-section" id="modal">
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="times">&times;</div>
+        <div class="modal-image">
+          <img src="${card.image.imageUrl}" alt="${card.image.altText}"/>
+        </div>
+        <div class="modal-title">
+          <h2 class="modal-title about-heading">${card.title}</h2>
+        </div>
+        <ul class="modal-list">`;
+    for (let i = 0; i < card.technologies.length; i += 1) {
+        createModalHTML += `<li>${card.technologies[i]}</li>`;
+    }
+
+      createModalHTML += 
+        `</ul>
+        <div class="modal-paragraph">
+          <p>${card.description}</p>
+        </div>
+        <div class="btn">
+          <a href="https://faizi2500.github.io/Portfolio-Mobile-Skeleton/">
+          ${card.sourceUrl} <i class="fas fa-external-link-alt f-icon"></i>
+          </a>
+          <a href="https://github.com/faizi2500/Portfolio-Mobile-Skeleton">
+          ${card.sourceCode} <i class="fab fa-github f-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>`;
+
+    return createModalHTML;
+}
+
+function createDynamicCard() {
+  // const projNames = Object.keys(projects);
+  // const projLength = Object.keys(projects).length;
+  for (let i = 0; i< Object.keys(projectObj).length; i++) {
+    container.innerHTML += createCard(projectObj[Object.keys(projectObj)[i]], i);
+  }
+  
+  for (let j=0; j < Object.keys(projectObj).length; i++) {
+    container.innerHTML += createModal(projectObj[Object.keys(projectObj)[i]], i);
+  }
+}
+
+container.onload = createDynamicCard();
+
 
