@@ -90,3 +90,24 @@ const projectObj = {
 };
 
 const container = document.querySelector('.grid-container');
+
+function createCard(card, index) {
+  let createCardHTML = 
+    `<li class="card">
+      <div class="card-head">
+        <img src="${card.image.imageUrl}" alt="${card.image.altText}">
+      </div>
+      <div class="card-body">
+        <h2 class="md-text">${card.name}</h2>
+        <ul class="work-tools">`
+    for (let i = 0; i < card.technologies.length; i += 1) {
+      createCardHTML += `<li>${card.technologies[i]}</li>`;
+    }    
+    createCardHTML +=    `</ul>
+        <button class="see-project-btn" type="button">${card.liveUrl}</button>
+      </div>
+      </li>` ;
+
+      return createCardHTML;
+}
+
