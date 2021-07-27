@@ -178,6 +178,94 @@ p {
   margin-right: 20px;
 }
 
+/* Modal */
+.modal-section {
+  background-color: rgba(0, 0, 0, 0.98);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 15;
+  overflow-y: hidden;
+}
+
+.modal-container {
+  background-color: #fff;
+  width: 90%;
+  height: 90%;
+  margin: 26px auto;
+  box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+.modal-content {
+  padding: 16px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.modal-img {
+  width: 100%;
+}
+
+modal-img img {
+  width: 100%;
+}
+
+.times {
+  position: absolute;
+  top: 30px;
+  right: 41px;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  margin: 12px 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.modal-list li {
+  margin-right: 8px;
+  background-color: #ebf0ee;
+  color: #3a4a42;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.modal-paragraph {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #344563;
+}
+
+.btn a {
+  background-color: #36b37f;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 0.8rem 1.5rem;
+  margin-right: 12px;
+}
+
+.btn {
+  margin: 26px 0;
+  border-radius: 4px;
+}
+
+.f-icon {
+  margin-left: 10px;
+}
 /* Links */
 
 .footer-email a {
@@ -801,5 +889,47 @@ button[type='submit']:focus {
 
   .footer-email {
     display: none;
+  }
+
+  /* Modal */
+
+  .modal-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-image {
+    grid-column: span 2;
+    order: 2;
+  }
+
+  .modal-image img {
+    margin-top: 4%;
+  }
+
+  .modal-title {
+    font-size: 1.7rem;
+    line-height: 44px;
+    order: 3;
+  }
+
+  .btn {
+    order: 4;
+    margin-left: 8rem;
+  }
+
+  .modal-list {
+    order: 5;
+  }
+
+  .modal-paragraph {
+    order: 6;
+    grid-column: span 2;
+  }
+
+  .times {
+    border-radius: 8px;
+    padding: 5px;
+    background-color: #ebecf0;
+    height: 30px;
   }
 }
