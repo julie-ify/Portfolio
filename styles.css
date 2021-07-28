@@ -716,7 +716,7 @@ button[type='submit']:focus {
 }
 
 .error-paragraph {
-  width: 100%;
+  width: 99%;
   display: none;
   margin-bottom: 1rem;
   color: red;
