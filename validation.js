@@ -7,8 +7,6 @@ paragraph.appendChild(errorAlert);
 const contactForm = document.querySelector('.form');
 const userEmail = document.querySelector('#email');
 
-contactForm.addEventListener('submit', checkError);
-
 function checkError(e) {
   if (userEmail.value !== userEmail.value.toLowerCase()) {
     paragraph.style.display = 'block';
@@ -17,3 +15,5 @@ function checkError(e) {
     paragraph.style.display = 'none';
   }
 }
+
+contactForm.addEventListener('submit', checkError);

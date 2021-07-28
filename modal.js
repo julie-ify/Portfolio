@@ -117,17 +117,17 @@ function createModal(cardNumber) {
   }
   buttonLive.setAttribute(
     'onclick',
-    `windows.open('${projects[cardNumber].sourceUrl}', '_blank');`
+    `windows.open('${projects[cardNumber].sourceUrl}', '_blank');`,
   );
   buttonLive.setAttribute(
     'onclick',
-    `windows.open('${projects[cardNumber].sourceUrl}', '_blank');`
+    `windows.open('${projects[cardNumber].sourceUrl}', '_blank');`,
   );
   modalDesc.innerHTML = projects[cardNumber].description;
 
   modalImg.setAttribute(
     'src',
-    `${projects[cardNumber].image.imageUrl + (cardNumber + 1)}.png`
+    `${projects[cardNumber].image.imageUrl + (cardNumber + 1)}.png`,
   );
 }
 

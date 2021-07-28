@@ -716,16 +716,18 @@ button[type='submit']:focus {
 }
 
 .error-paragraph {
-  /* display: flex; */
-  /* background-color: rosybrown; */
   width: 100%;
-  /* visibility: hidden; */
   display: none;
   margin-bottom: 1rem;
   color: red;
   border: 1px solid #000;
   border-radius: 4px;
 }
+
+.alert-errorMsg {
+  padding-left: 3%;
+}
+
 .footer {
   width: 100%;
 }
