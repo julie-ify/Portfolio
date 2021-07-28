@@ -716,10 +716,15 @@ button[type='submit']:focus {
 }
 
 .error-paragraph {
+  /* display: flex; */
+  /* background-color: rosybrown; */
+  width: 100%;
+  /* visibility: hidden; */
   display: none;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: red;
   border: 1px solid #000;
+  border-radius: 4px;
 }
 .footer {
   width: 100%;
