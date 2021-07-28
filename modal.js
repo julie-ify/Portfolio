@@ -1,7 +1,7 @@
 const projectObj = {
   project1: {
     image: {
-      imageUrl: './images/modal-image.png',
+      imageUrl: './images/modal-image',
       altText: 'project image',
     },
     name: 'Multi-Post StoriesGain+Glory',
@@ -16,7 +16,7 @@ const projectObj = {
 
   project2: {
     image: {
-      imageUrl: './images/modal-image.png',
+      imageUrl: './images/modal-image',
       altText: 'project image',
     },
     name: 'Multi-Post StoriesGain+Glory',
@@ -31,7 +31,7 @@ const projectObj = {
 
   project3: {
     image: {
-      imageUrl: './images/modal-image.png',
+      imageUrl: './images/modal-image',
       altText: 'project image',
     },
     name: 'Multi-Post StoriesGain+Glory',
@@ -46,7 +46,7 @@ const projectObj = {
 
   project4: {
     image: {
-      imageUrl: './images/modal-image.png',
+      imageUrl: './images/modal-image',
       altText: 'project image',
     },
     name: 'Multi-Post StoriesGain+Glory',
@@ -61,7 +61,7 @@ const projectObj = {
 
   project5: {
     image: {
-      imageUrl: './images/modal-image.png',
+      imageUrl: './images/modal-image',
       altText: 'project image',
     },
     name: 'Multi-Post StoriesGain+Glory',
@@ -75,7 +75,7 @@ const projectObj = {
   },
   project6: {
     image: {
-      imageUrl: './images/modal-image.png',
+      imageUrl: './images/modal-image',
       altText: 'project image',
     },
     name: 'Multi-Post StoriesGain+Glory',
@@ -89,76 +89,52 @@ const projectObj = {
   },
 };
 
-const container = document.querySelector('.grid-container');
+const projects = [
+  projectObj.project1,
+  projectObj.project2,
+  projectObj.project3,
+  projectObj.project4,
+  projectObj.project5,
+  projectObj.project6,
+];
 
-function createCard(card, index) {
-  let createCardHTML = 
-    `<li class="card">
-      <div class="card-head">
-        <img src="${card.image.imageUrl}" alt="${card.image.altText}">
-      </div>
-      <div class="card-body">
-        <h2 class="md-text">${card.name}</h2>
-        <ul class="work-tools">`
-    for (let i = 0; i < card.technologies.length; i += 1) {
-      createCardHTML += `<li class="work-tool">${card.technologies[i]}</li>`;
-    }    
-    createCardHTML +=    `</ul>
-        <button class="see-project-btn" type="button">${card.liveUrl}</button>
-      </div>
-      </li>` ;
+function createModal(cardNumber) {
+  const modalCard = document.querySelector('#modal');
+  modalCard.classList.toggle('invisible');
+  const modaltitle = document.querySelector('.modal-heading');
+  const modallist = document.querySelector('.modal-list');
+  modallist.innerHTML = '';
+  const modalImg = document.querySelector('.img');
+  const modalDesc = document.querySelector('.modal-p');
+  const buttonLive = document.querySelector('.f-icon-1');
 
-      return createCardHTML;
-}
+  modaltitle.innerHTML = projects[cardNumber].title;
 
-function createModal(card, index) {
-  let createModalHTML = 
-  `<section class="modal-section" id="modal">
-    <div class="modal-container">
-      <div class="modal-content">
-        <div class="times">&times;</div>
-        <div class="modal-image">
-          <img src="${card.image.imageUrl}" alt="${card.image.altText}"/>
-        </div>
-        <div class="modal-title">
-          <h2 class="modal-title about-heading">${card.title}</h2>
-        </div>
-        <ul class="modal-list">`;
-    for (let i = 0; i < card.technologies.length; i += 1) {
-        createModalHTML += `<li>${card.technologies[i]}</li>`;
-    }
-
-      createModalHTML += 
-        `</ul>
-        <div class="modal-paragraph">
-          <p>${card.description}</p>
-        </div>
-        <div class="btn">
-          <a href="https://faizi2500.github.io/Portfolio-Mobile-Skeleton/">
-          ${card.sourceUrl} <i class="fas fa-external-link-alt f-icon"></i>
-          </a>
-          <a href="https://github.com/faizi2500/Portfolio-Mobile-Skeleton">
-          ${card.sourceCode} <i class="fab fa-github f-icon"></i>
-          </a>
-        </div>
-      </div>
-    </div>`;
-
-    return createModalHTML;
-}
-
-function createDynamicCard() {
-  // const projNames = Object.keys(projects);
-  // const projLength = Object.keys(projects).length;
-  for (let i = 0; i< Object.keys(projectObj).length; i++) {
-    container.innerHTML += createCard(projectObj[Object.keys(projectObj)[i]], i);
+  for (let i = 0; i < projects[cardNumber].technologies.length; i += 1) {
+    const list = document.createElement('li');
+    list.textContent = projects[cardNumber].technologies[i];
+    modallist.appendChild(list);
   }
-  
-  for (let j=0; j < Object.keys(projectObj).length; i++) {
-    container.innerHTML += createModal(projectObj[Object.keys(projectObj)[i]], i);
-  }
+  buttonLive.setAttribute(
+    'onclick',
+    `windows.open('${projects[cardNumber].sourceUrl}', '_blank');`,
+  );
+  buttonLive.setAttribute(
+    'onclick',
+    `windows.open('${projects[cardNumber].sourceUrl}', '_blank');`,
+  );
+  modalDesc.innerHTML = projects[cardNumber].description;
+
+  modalImg.setAttribute(
+    'src',
+    `${projects[cardNumber].image.imageUrl + (cardNumber + 1)}.png`,
+  );
 }
 
-container.onload = createDynamicCard();
+function toggle() {
+  const card = document.querySelector('#modal');
+  card.classList.toggle('invisible');
+}
 
-
+createModal(1);
+toggle();

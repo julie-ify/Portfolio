@@ -78,14 +78,14 @@
           </button>
         </section>
       </section>
-
+<!-- work -->
       <section class="works" id="projects">
         <div class="works-header">
           <h1 class="underline">My Recent <span class="break">Works</span></h1>
         </div>
         <ul class="grid-container">
-          <!-- <li class="card">
-            <div class="card-head"><img src="images/modal-image.png" alt=""></div>
+          <li class="card">
+            <div class="card-head"><img src="images/modal-image1.png" alt=""></div>
             <div class="card-body">
               <h2 class="md-text">
                 Multi-Post Stories <br />
@@ -97,11 +97,11 @@
                 <li class="work-tool">javascript</li>
                 <li class="work-tool">html</li>
               </ul>
-              <button class="see-project-btn" type="button">See Project</button>
+              <button onclick="createModal(0)" class="see-project-btn" type="button">See Project</button>
             </div>
           </li>
           <li class="card">
-            <div class="card-head"><img src="images/modal-image.png" alt=""></div>
+            <div class="card-head"><img src="images/modal-image1.png" alt=""></div>
             <div class="card-body">
               <h2 class="md-text">
                 Multi-Post Stories <br />
@@ -113,11 +113,11 @@
                 <li class="work-tool">javascript</li>
                 <li class="work-tool">html</li>
               </ul>
-              <button class="see-project-btn" type="button">See Project</button>
+              <button onclick="createModal(1)" class="see-project-btn" type="button">See Project</button>
             </div>
           </li>
           <li class="card">
-            <div class="card-head"><img src="images/modal-image.png" alt=""></div>
+            <div class="card-head"><img src="images/modal-image1.png" alt=""></div>
             <div class="card-body">
               <h2 class="md-text">
                 Multi-Post Stories <br />
@@ -129,11 +129,11 @@
                 <li class="work-tool">javascript</li>
                 <li class="work-tool">html</li>
               </ul>
-              <button class="see-project-btn" type="button">See Project</button>
+              <button onclick="createModal(2)" class="see-project-btn" type="button">See Project</button>
             </div>
           </li>
           <li class="card">
-            <div class="card-head"><img src="images/modal-image.png" alt=""></div>
+            <div class="card-head"><img src="images/modal-image1.png" alt=""></div>
             <div class="card-body">
               <h2 class="md-text">
                 Multi-Post Stories <br />
@@ -145,11 +145,11 @@
                 <li class="work-tool">javascript</li>
                 <li class="work-tool">html</li>
               </ul>
-              <button class="see-project-btn" type="button">See Project</button>
+              <button onclick="createModal(3)" class="see-project-btn" type="button">See Project</button>
             </div>
           </li>
           <li class="card">
-            <div class="card-head"><img src="images/modal-image.png" alt=""></div>
+            <div class="card-head"><img src="images/modal-image1.png" alt=""></div>
             <div class="card-body">
               <h2 class="md-text">
                 Multi-Post Stories <br />
@@ -161,11 +161,11 @@
                 <li class="work-tool">javascript</li>
                 <li class="work-tool">html</li>
               </ul>
-              <button class="see-project-btn" type="button">See Project</button>
+              <button onclick="createModal(4)" class="see-project-btn" type="button">See Project</button>
             </div>
           </li>
           <li class="card">
-            <div class="card-head"><img src="images/modal-image.png" alt=""></div>
+            <div class="card-head"><img src="images/modal-image1.png" alt=""></div>
             <div class="card-body">
               <h2 class="md-text">
                 Multi-Post Stories <br />
@@ -177,11 +177,12 @@
                 <li class="work-tool">javascript</li>
                 <li class="work-tool">html</li>
               </ul>
-              <button class="see-project-btn" type="button">See Project</button>
+              <button onclick="createModal(5)" class="see-project-btn" type="button">See Project</button>
             </div>
-          </li> -->
+          </li>
         </ul>
       </section>
+      <!-- About -->
       <section class="about" id="about-me">
         <div class="about-content">
           <img src="images/Frame1.png" alt="frame" class="frame-1" />
@@ -302,6 +303,32 @@
         <img src="images/Frame3.png" alt="Frame" class="frame-33" />
       </div>
     </footer>
+    <!--  -->
+    <section class="modal-section invisible" id="modal">
+      <div class="modal-container">
+        <div class="modal-content">
+          <div class="modal-image">
+            <div class="times" onclick="toggle()">&times;</div>
+            <img src="images/modal-image.png" alt="" class="img">
+          </div>
+          <div class="modal-title">
+            <h2 class="about-heading modal-heading">
+            </h2>
+          </div>
+          <ul class="modal-list">
+          </ul>
+          <div class="modal-paragraph">
+            <p class="modal-p">
+            </p>
+          </div>
+          <div class="btn">
+            <a href="" class="f-icon-1">See Live <i class="fas fa-external-link-alt f-icon"></i></a>
+            <a href="" class="f-icon-2">See Source <i class="fab fa-github f-icon f-icon-2"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <script src="script.js"></script>
     <script src="modal.js"></script>

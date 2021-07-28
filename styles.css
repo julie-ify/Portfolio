@@ -186,15 +186,13 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   z-index: 15;
   overflow-y: hidden;
 }
 
 .modal-container {
   background-color: #fff;
-  width: 80%;
+  width: 90%;
   height: 90%;
   margin: 26px auto;
   box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
@@ -204,23 +202,23 @@ p {
 
 .modal-content {
   padding: 16px;
-  position: relative;
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.modal-img {
+.modal-image {
+  position: relative;
   width: 100%;
 }
 
-.modal-img img {
+.modal-image img {
   width: 100%;
 }
 
 .times {
   position: absolute;
-  top: 30px;
-  right: 41px;
+  top: 7%;
+  right: 6%;
   font-size: 45px;
   cursor: pointer;
 }
@@ -233,6 +231,14 @@ p {
   margin: 12px 0;
   font-size: 12px;
   font-weight: 600;
+}
+
+.visible {
+  display: block;
+}
+
+.invisible {
+  display: none !important;
 }
 
 .modal-list li {
@@ -256,16 +262,20 @@ p {
   font-weight: 500;
   padding: 0.8rem 1.5rem;
   margin-right: 12px;
+  border-radius: 4px;
 }
 
 .btn {
   margin: 26px 0;
-  border-radius: 4px;
 }
 
 .f-icon {
   margin-left: 10px;
 }
+
+/* .visible {
+  display: block;
+} */
 /* Links */
 
 .footer-email a {
@@ -919,7 +929,7 @@ button[type='submit']:focus {
 
   .btn {
     order: 4;
-    margin-left: 8rem;
+    margin-left: 4rem;
   }
 
   .modal-list {
