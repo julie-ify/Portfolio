@@ -715,6 +715,19 @@ button[type='submit']:focus {
   background-color: #008552;
 }
 
+.error-paragraph {
+  width: 99%;
+  display: none;
+  margin-bottom: 1rem;
+  color: red;
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.alert-errorMsg {
+  padding-left: 3%;
+}
+
 .footer {
   width: 100%;
 }
