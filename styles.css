@@ -715,6 +715,12 @@ button[type='submit']:focus {
   background-color: #008552;
 }
 
+.error-paragraph {
+  display: none;
+  margin-top: 1rem;
+  color: red;
+  border: 1px solid #000;
+}
 .footer {
   width: 100%;
 }
