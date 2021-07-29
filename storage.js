@@ -1,11 +1,6 @@
-const form = document.querySelector('.form');
 const userName = document.getElementById('name');
 const emailId = document.getElementById('email');
 const userMsg = document.getElementById('msg');
-
-if (!localStorage.getItem('name')) {
-  populateStorage();
-} else setStorage();
 
 function populateStorage() {
   localStorage.setItem('name', document.getElementById('name').value);
@@ -22,6 +17,10 @@ function setStorage() {
   document.getElementById('email').value = currentEmail;
   document.getElementById('msg').value = currentMsg;
 }
+
+if (!localStorage.getItem('name')) {
+  populateStorage();
+} else setStorage();
 
 userName.onchange = populateStorage;
 emailId.onchange = populateStorage;
