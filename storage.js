@@ -2,13 +2,6 @@ const userName = document.getElementById('name');
 const emailId = document.getElementById('email');
 const userMsg = document.getElementById('msg');
 
-function populateStorage() {
-  localStorage.setItem('name', document.getElementById('name').value);
-  localStorage.setItem('email', document.getElementById('email').value);
-  localStorage.setItem('msg', document.getElementById('msg').value);
-  setStorage();
-}
-
 function setStorage() {
   const currentName = localStorage.getItem('name');
   const currentEmail = localStorage.getItem('email');
@@ -18,6 +11,13 @@ function setStorage() {
   document.getElementById('msg').value = currentMsg;
 }
 
+function populateStorage() {
+  localStorage.setItem('name', document.getElementById('name').value);
+  localStorage.setItem('email', document.getElementById('email').value);
+  localStorage.setItem('msg', document.getElementById('msg').value);
+  setStorage();
+}
+
 if (!localStorage.getItem('name')) {
   populateStorage();
 } else setStorage();
@@ -25,4 +25,3 @@ if (!localStorage.getItem('name')) {
 userName.onchange = populateStorage;
 emailId.onchange = populateStorage;
 userMsg.onchange = populateStorage;
-
