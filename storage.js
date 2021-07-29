@@ -26,3 +26,5 @@ function setStorage() {
 userName.onchange = populateStorage;
 emailId.onchange = populateStorage;
 userMsg.onchange = populateStorage;
+
+console.log(localStorage)
