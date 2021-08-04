@@ -10,8 +10,8 @@ const projectObj = {
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/Portfolio-Mobile-version/',
-    sourceCode: 'https://github.com/julie-ify/Portfolio-Mobile-version',
+    sourceUrl: 'https://julie-ify.github.io/Capstone-1-Project/',
+    sourceCode: 'https://github.com/julie-ify/Capstone-1-Project',
   },
 
   project2: {
