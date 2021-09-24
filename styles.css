@@ -230,7 +230,7 @@ p {
 }
 
 .times:hover {
-  color: #19d388;;
+  color: #19d388;
 }
 
 .modal-list {
@@ -269,24 +269,6 @@ p {
   border-radius: 4px;
 }
 
-.btn a:hover {
-  background-color: #19d388;;
-}
-
-.btn {
-  margin: 26px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: fit-content;
-}
-
-.f-icon {
-  margin-left: 10px;
-}
-
-/* Links */
-
 .footer-email a {
   color: #42526e;
   transition-property: color;
@@ -305,6 +287,24 @@ p {
   transition-property: color;
   transition-duration: 0.7s;
 }
+
+.btn a:hover {
+  background-color: #19d388;
+}
+
+.btn {
+  margin: 26px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
+}
+
+.f-icon {
+  margin-left: 10px;
+}
+
+/* Links */
 
 .contact-icon a:hover,
 .footer-icon a:hover,
@@ -381,10 +381,6 @@ p {
   margin: 0 auto;
 }
 
-.card:hover {
-  border: 1px solid #30aa75;
-}
-
 .card {
   width: 100%;
   max-width: 500px;
@@ -392,6 +388,10 @@ p {
   border-radius: 8px;
   margin: 24px auto;
   height: 550px;
+}
+
+.card:hover {
+  border: 1px solid #30aa75;
 }
 
 .card-head {
@@ -956,11 +956,11 @@ button[type='submit']:focus {
     text-align: left;
     justify-content: flex-start;
   }
-  
+
   .modal-list li {
     text-align: left;
   }
-  
+
   .btn {
     flex-direction: row;
     margin-left: 0;
