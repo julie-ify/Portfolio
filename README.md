@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio-Mobile-Version
+# Portfolio
 
-> Desktop version of my portfolio website using figma template.
+>  Portfolio project website using figma template.
 
 ![screenshot](./images/project1.png)
 ![screenshot](./images/project2.png)
@@ -16,17 +16,17 @@ This project entails Building a mobile and desktop version of my portfolio websi
 
 - Html
 - Css
+- JavaScript
 
 ### Prerequisites
 
 - Text editor
 - Git
-- Html
-- Css
+- Github
 
 ## Live Demo
 
-[Live Demo Link](https://julie-ify.github.io/Portfolio-Mobile-version/)
+[Live Demo Link](https://julie-ify.github.io/Portfolio/)
 
 ## Getting Started
 
@@ -35,18 +35,18 @@ To get a local copy up and running follow these simple steps.
 - You can clone this repo by typing `git clone git@github.com:julie-ify/Portfolio-Mobile-version.git` on your terminal
 - Type `cd Portfolio-Mobile-version` to access the project on the terminal
 
-## Authors
+## Author
 
-👤 **Ifionu Julie**
+👤 **Juliana Ifionu**
 
-- GitHub: [@githubhandle](https://github.com/julie-ify)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juliana-ifionu-4a9492212/)
+- [GitHub](https://github.com/julie-ify)
+- [LinkedIn](https://www.linkedin.com/in/e-ifionu/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/julie-ify/Portfolio-Mobile-version/issues).
+Feel free to check the [issues page](https://github.com/julie-ify/Portfolio/issues).
 
 ## Show your support
 
