@@ -180,6 +180,7 @@ p {
 
 /* Modal */
 .modal-section {
+  display: none;
   background-color: rgba(0, 0, 0, 0.98);
   width: 100%;
   height: 100%;
@@ -204,15 +205,17 @@ p {
   padding: 16px;
   display: grid;
   grid-template-columns: 1fr;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.modal-image {
+.modal-div {
   position: relative;
-  width: 100%;
 }
 
-.modal-image img {
-  width: 100%;
+.imgry {
+  width: 90%;
+  margin: 4rem auto;
 }
 
 .times {
@@ -233,13 +236,13 @@ p {
   font-weight: 600;
 }
 
-.visible {
+/* .visible {
   display: block;
 }
 
 .invisible {
   display: none !important;
-}
+} */
 
 .modal-list li {
   margin-right: 8px;
@@ -922,13 +925,13 @@ button[type='submit']:focus {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .modal-image {
+  .modal-div {
     grid-column: span 2;
     order: 2;
   }
 
-  .modal-image img {
-    margin-top: 4%;
+  .imgry {
+    margin-top: 10%;
   }
 
   .modal-title {
