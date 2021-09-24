@@ -207,7 +207,6 @@ p {
   grid-template-columns: 1fr;
   width: 80%;
   margin: 0 auto;
-
 }
 
 .modal-div {
@@ -924,11 +923,6 @@ button[type='submit']:focus {
 
   .modal-content {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .modal-div {
-    grid-column: span 2;
-    order: 2;
   }
 
   .modal-div {

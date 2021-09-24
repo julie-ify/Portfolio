@@ -22,7 +22,7 @@ const projectObj = {
     name: 'Todo List App',
     title: 'Keeping track of hundreds of components',
     description:
-      "This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back.",
+      'This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Babel'],
     liveUrl: 'See Project',
     sourceUrl: 'https://julie-ify.github.io/ToDo-List-App/',
@@ -100,12 +100,6 @@ const projects = [
 
 const modalSection = document.querySelector('.modal-section');
 const projectsBtn = [...document.querySelectorAll('.see-project-btn')];
-for(let i = 0; i < projectsBtn.length; i += 1) {
-  projectsBtn[i].addEventListener('click', (e) => {
-    modalSection.style.display = 'block';
-    createModal(i)
-  })
-}
 
 function createModal(cardNumber) {
   const modalImgDiv = document.querySelector('.modal-content');
@@ -127,7 +121,7 @@ function createModal(cardNumber) {
   <a href="${projects[cardNumber].sourceCode}" target="_blank" class="f-icon-2"
     >See Source <i class="fab fa-github f-icon f-icon-2"></i
   ></a>
-  </div>` 
+  </div>`;
 
   const modallist = document.querySelector('.modal-list');
   for (let i = 0; i < projects[cardNumber].technologies.length; i += 1) {
@@ -139,16 +133,12 @@ function createModal(cardNumber) {
   const times = document.querySelector('.times');
   times.addEventListener('click', () => {
     modalSection.style.display = 'none';
-  })
+  });
 }
-// console.log(projectsBtn)
 
-
-
-// function toggle() {
-//   const card = document.querySelector('#modal');
-//   card.classList.toggle('invisible');
-// }
-
-// createModal(1);
-// toggle();
+for (let i = 0; i < projectsBtn.length; i += 1) {
+  projectsBtn[i].addEventListener('click', () => {
+    modalSection.style.display = 'block';
+    createModal(i);
+  });
+}
