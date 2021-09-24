@@ -193,7 +193,8 @@ p {
 
 .modal-container {
   background-color: #fff;
-  width: 90%;
+  width: 70%;
+  max-width: 800px;
   height: 90%;
   margin: 26px auto;
   box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
@@ -206,7 +207,9 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   width: 80%;
+  max-width: 700px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .modal-div {
@@ -214,7 +217,7 @@ p {
 }
 
 .imgry {
-  width: 90%;
+  width: 100%;
   margin: 4rem auto;
 }
 
@@ -226,11 +229,16 @@ p {
   cursor: pointer;
 }
 
+.times:hover {
+  color: #19d388;;
+}
+
 .modal-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: start;
+  text-align: center;
+  justify-content: center;
   margin: 12px 0;
   font-size: 12px;
   font-weight: 600;
@@ -242,6 +250,7 @@ p {
   color: #3a4a42;
   border-radius: 4px;
   padding: 8px 12px;
+  text-align: center;
 }
 
 .modal-paragraph {
@@ -260,8 +269,16 @@ p {
   border-radius: 4px;
 }
 
+.btn a:hover {
+  background-color: #19d388;;
+}
+
 .btn {
-  margin: 26px 0;
+  margin: 26px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: fit-content;
 }
 
 .f-icon {
@@ -931,44 +948,22 @@ button[type='submit']:focus {
   }
 
   /* Modal */
-
   .modal-content {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .modal-div {
-    grid-column: span 2;
-    order: 2;
-  }
-
-  .imgry {
-    margin-top: 10%;
-  }
-
-  .modal-title {
-    font-size: 1.7rem;
-    line-height: 44px;
-    order: 3;
-  }
-
-  .btn {
-    order: 4;
-    margin-left: 4rem;
+    text-align: left;
   }
 
   .modal-list {
-    order: 5;
+    text-align: left;
+    justify-content: flex-start;
   }
-
-  .modal-paragraph {
-    order: 6;
-    grid-column: span 2;
+  
+  .modal-list li {
+    text-align: left;
   }
-
-  .times {
-    border-radius: 8px;
-    padding: 5px;
-    background-color: #ebecf0;
-    height: 30px;
+  
+  .btn {
+    flex-direction: row;
+    margin-left: 0;
+    text-align: left;
   }
 }
