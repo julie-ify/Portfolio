@@ -1,7 +1,7 @@
 const projectObj = {
   project1: {
     image: {
-      imageUrl: './images/modal-image1.png',
+      imageUrl: './images/books2.png',
       altText: 'project image',
     },
     name: 'Book Store',

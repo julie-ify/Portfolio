@@ -236,17 +236,9 @@ p {
   font-weight: 600;
 }
 
-/* .visible {
-  display: block;
-}
-
-.invisible {
-  display: none !important;
-} */
-
 .modal-list li {
   margin-right: 8px;
-  background-color: #ebf0ee;
+  background-color: #b4dbcc;
   color: #3a4a42;
   border-radius: 4px;
   padding: 8px 12px;
@@ -366,28 +358,35 @@ p {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
+  gap: 2rem;
   width: 90%;
   box-sizing: border-box;
   margin: 0 auto;
 }
 
+.card:hover {
+  border: 1px solid #30aa75;
+}
+
 .card {
-  border: 1px solid #d0d9d4;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #e7eeeb;
   border-radius: 8px;
-  margin-bottom: 24px;
+  margin: 24px auto;
+  height: 550px;
 }
 
 .card-head {
   width: 100%;
-  height: 252px;
+  height: 275px;
   background-color: #ebf0ee;
-  border-radius: 4px;
 }
 
 .card-head img {
   width: 100%;
   height: 100%;
+  border-radius: 8px 8px 0 0;
 }
 
 .card-body {
@@ -395,9 +394,10 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #f4f4f4;
   text-align: center;
-  margin-bottom: 3rem;
+  width: 100%;
+  height: 275px;
 }
 
 .work-tools {
@@ -417,7 +417,7 @@ p {
   line-height: 16px;
   letter-spacing: 3%;
   font-style: normal;
-  background-color: #ebf0ee;
+  background-color: #b4dbcc;
   border-radius: 4px;
   padding: 8px 8px;
   color: #3a4a42;
@@ -451,8 +451,9 @@ p {
 }
 
 .see-project-btn:hover {
-  background-color: #36b37f;
+  background-color: #19d388;
   box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
 }
 
 .see-project-btn:focus {
@@ -792,7 +793,7 @@ button[type='submit']:focus {
 }
 
 /* Mobile Version */
-@media only screen and (max-width: 994px) {
+@media only screen and (max-width: 576px) {
   header.menu-nav {
     display: none;
   }
@@ -812,9 +813,19 @@ button[type='submit']:focus {
   }
 }
 
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skillset {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 /* Desktop Version */
 
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 1200px) {
   header.header-content {
     display: none;
   }
