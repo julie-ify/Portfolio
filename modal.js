@@ -19,10 +19,10 @@ const projectObj = {
       imageUrl: './images/modal-image2.png',
       altText: 'project image',
     },
-    name: 'Todo List App',
-    title: 'Keeping track of hundreds of components',
+    name: 'Todo App',
+    title: 'Todo list',
     description:
-      'This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back.',
+      'This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back. This project was built with JavaScript.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Babel'],
     liveUrl: 'See Project',
     sourceUrl: 'https://julie-ify.github.io/ToDo-List-App/',
@@ -31,32 +31,32 @@ const projectObj = {
 
   project3: {
     image: {
-      imageUrl: './images/modal-image3.png',
+      imageUrl: './images/movie.png',
       altText: 'project image',
     },
-    name: 'Multi-Post StoriesGain+Glory',
-    title: 'Keeping track of hundreds of components',
+    name: 'NETFLEX',
+    title: 'Watch your favourite movie',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      'This project entails building a user-friendly and NETFLEX is a web application that fetches TV Shows from an external API - TV Maze API. Users can like and comment on a TV Show. The likes and comments features are all handled by API. Built with Javascript. to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back.',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/Portfolio-Mobile-version/',
-    sourceCode: 'https://github.com/julie-ify/Portfolio-Mobile-version',
+    sourceUrl: 'https://bit.ly/3tmGmS2',
+    sourceCode: 'https://github.com/julie-ify/js-capstone-netflex',
   },
 
   project4: {
     image: {
-      imageUrl: './images/modal-image4.png',
+      imageUrl: './images/bootcamp.png',
       altText: 'project image',
     },
-    name: 'Multi-Post StoriesGain+Glory',
-    title: 'Keeping track of hundreds of components',
+    name: 'Web Development Bootcamp',
+    title: 'Best web development bootcamp 2021',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "This is a capstone project for HTML & CSS module in Microverse. It's about a web development bootcamp which takes place every year at different locations and cities. Users can sign up to attend the event.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/Portfolio-Mobile-version/',
-    sourceCode: 'https://github.com/julie-ify/Portfolio-Mobile-version',
+    sourceUrl: 'https://julie-ify.github.io/HTML-Capstone-Project/',
+    sourceCode: 'https://github.com/julie-ify/HTML-Capstone-Project',
   },
 
   project5: {
@@ -110,10 +110,13 @@ function createModal(cardNumber) {
   <div class="modal-title">
   <h2 class="about-heading modal-heading">${projects[cardNumber].name}</h2>
   </div>
-  <ul class="modal-list"></ul>
   <div class="modal-paragraph">
-  <p class="modal-p">${projects[cardNumber].title}</p>
+  <h3 class="modal-p">${projects[cardNumber].title}</h3>
   </div>
+  <div class="modal-paragraph">
+  <p class="modal-p">${projects[cardNumber].description}</p>
+  </div>
+  <ul class="modal-list"></ul>
   <div class="btn">
   <a href="${projects[cardNumber].sourceUrl}" target="_blank" class="f-icon-1"
     >See Live <i class="fas fa-external-link-alt f-icon"></i
