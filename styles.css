@@ -502,6 +502,33 @@ p {
   width: 100%;
 }
 
+.resume {
+  background-color: #36b37f;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  height: 48px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 3%;
+  font-style: normal;
+  color: #fff;
+  left: calc(50% - 122px / 2 + 0.5px);
+  transition: background-color 0.7s;
+}
+
+.resume:hover {
+  background-color: #19d388;
+  box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
+  cursor: pointer;
+}
+
+.resume:focus {
+  background-color: #008552;
+}
+
 .about-text {
   margin: 57px 24px 24px;
   font-size: 40px;

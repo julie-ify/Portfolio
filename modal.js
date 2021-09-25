@@ -16,21 +16,6 @@ const projectObj = {
 
   project2: {
     image: {
-      imageUrl: './images/modal-image2.png',
-      altText: 'project image',
-    },
-    name: 'Todo App',
-    title: 'Todo list',
-    description:
-      'This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back. This project was built with JavaScript.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Babel'],
-    liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/ToDo-List-App/',
-    sourceCode: 'https://github.com/julie-ify/ToDo-List-App',
-  },
-
-  project3: {
-    image: {
       imageUrl: './images/movie.png',
       altText: 'project image',
     },
@@ -44,7 +29,7 @@ const projectObj = {
     sourceCode: 'https://github.com/julie-ify/js-capstone-netflex',
   },
 
-  project4: {
+  project3: {
     image: {
       imageUrl: './images/bootcamp.png',
       altText: 'project image',
@@ -57,6 +42,21 @@ const projectObj = {
     liveUrl: 'See Project',
     sourceUrl: 'https://julie-ify.github.io/HTML-Capstone-Project/',
     sourceCode: 'https://github.com/julie-ify/HTML-Capstone-Project',
+  },
+
+  project4: {
+    image: {
+      imageUrl: './images/modal-image2.png',
+      altText: 'project image',
+    },
+    name: 'Todo App',
+    title: 'Todo list',
+    description:
+      'This project entails building a user-friendly and responsive to-do app in which a user can add new tasks, check completed tasks, delete tasks, and remove completed tasks. This project saves users task in local Storage so that user can see all his tasks when he leaves the app and comes back. This project was built with JavaScript.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Webpack', 'Babel'],
+    liveUrl: 'See Project',
+    sourceUrl: 'https://julie-ify.github.io/ToDo-List-App/',
+    sourceCode: 'https://github.com/julie-ify/ToDo-List-App',
   },
 
   project5: {
