@@ -61,31 +61,31 @@ const projectObj = {
 
   project5: {
     image: {
-      imageUrl: './images/modal-image5.png',
+      imageUrl: './images/portfolio.png',
       altText: 'project image',
     },
-    name: 'Multi-Post StoriesGain+Glory',
-    title: 'Keeping track of hundreds of components',
+    name: 'Portfolio',
+    title: 'My Portfolio website',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      'This project entails building a responsive portfolio website that showcases my bio, projects I have worked on, and how to contact me. It was built with SASS and JavaScript.',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/Portfolio-Mobile-version/',
-    sourceCode: 'https://github.com/julie-ify/Portfolio-Mobile-version',
+    sourceUrl: 'https://julie-ify.github.io/myportfolio/index.html',
+    sourceCode: 'https://github.com/julie-ify/myportfolio',
   },
   project6: {
     image: {
-      imageUrl: './images/modal-image6.png',
+      imageUrl: './images/tip.png',
       altText: 'project image',
     },
-    name: 'Multi-Post StoriesGain+Glory',
-    title: 'Keeping track of hundreds of components',
+    name: 'Tip Calculator App',
+    title: 'Calculating tip made easy',
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+      "This is a tip calculator app. Users can view the optimal layout for the app depending on their device's screen size. Users can calculate the correct tip and total cost of the bill per person.",
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'HTML'],
     liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/Portfolio-Mobile-version/',
-    sourceCode: 'https://github.com/julie-ify/Portfolio-Mobile-version',
+    sourceUrl: 'https://julie-ify.github.io/Calculator-App/dist/',
+    sourceCode: 'https://github.com/julie-ify/Calculator-App',
   },
 };
 

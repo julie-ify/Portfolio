@@ -109,6 +109,10 @@ p {
   color: #67798e;
 }
 
+.cross-arrow:hover {
+  color: #008552;
+}
+
 .mobile-nav {
   margin-top: 108px;
   margin-left: 28px;
@@ -290,6 +294,11 @@ p {
 
 .btn a:hover {
   background-color: #19d388;
+}
+
+.menu-mobile-list a:hover {
+  color: #008552;
+  text-decoration: underline;
 }
 
 .btn {
