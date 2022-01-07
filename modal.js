@@ -1,17 +1,17 @@
 const projectObj = {
   project1: {
     image: {
-      imageUrl: './images/books2.png',
+      imageUrl: './images/budgetapp.png',
       altText: 'project image',
     },
-    name: 'Book Store',
-    title: 'Add and remove book from book store',
+    name: 'Budget app',
+    title: 'Track your transaction based on the product you purchased and the category',
     description:
-      "This project entails building a book Store app that users get to add and remove a book by book's name and the author and the information is stored and rendered from Local Storage.",
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap'],
+      "This is a ruby on rails mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spent and on what.",
+    technologies: ['Ruby', 'Rails', 'postgresql', 'Bootstrap', 'Rspec', 'Capybara', 'Devise', 'Cancancan'],
     liveUrl: 'See Project',
-    sourceUrl: 'https://julie-ify.github.io/Book-Store/',
-    sourceCode: 'https://github.com/julie-ify/Book-Store',
+    sourceUrl: 'https://julie-budgetapp.herokuapp.com/',
+    sourceCode: 'https://github.com/julie-ify/Budget-app',
   },
 
   project2: {
